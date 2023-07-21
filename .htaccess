@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+Rewriterule ^orden-pdf/([0-9]+)$ order-print-pdf.php?order_id=$1
+
